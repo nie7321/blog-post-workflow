@@ -156,7 +156,7 @@ feedList.forEach((siteUrl) => {
               });
               const categories = item.categories ?  categoriesToArray(item.categories) : [];
               let post = {
-                title: item.title.trim(),
+                title: item.title?.trim(),
                 url: item.link.trim(),
                 description: item.content ? item.content : '',
                 ...customTags,
